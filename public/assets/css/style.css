@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;400;700&family=Poppins:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +75,7 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .static-box p:first-child {
   font-family: Muli;
   font-size: 1.1875rem;
@@ -83,6 +85,7 @@ p {
   color: #9FA2B4;
   background-color: #FFF;
 }
+
 .static-box p:nth-child(2) {
   font-family: Muli;
   font-size: 2.5rem;
@@ -119,18 +122,22 @@ p {
 main {
   background: var(--grayscale-white, #FFF);
 }
+
 main img {
   width: 100%;
   overflow: hidden;
 }
+
 main .gray-line,
 main .blue-line {
   height: 2px;
   width: 1rem;
 }
+
 main .gray-line {
   background-color: #A4A6B3;
 }
+
 main .blue-line {
   background-color: #3751FF;
 }
@@ -150,6 +157,7 @@ aside {
   /* 137.5% */
   letter-spacing: 0.3px;
 }
+
 .number #number {
   color: var(--grayscale-black, #252733);
   text-align: center;
@@ -297,12 +305,12 @@ h6 {
 }
 
 /* On mouse-over, add a grey background color */
-.checkboxone:hover input ~ .checkmark {
+.checkboxone:hover input~.checkmark {
   background-color: #C5C7CD;
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkboxone input:checked ~ .checkmark {
+.checkboxone input:checked~.checkmark {
   background-color: #3751FF;
   border: none;
 }
@@ -315,7 +323,7 @@ h6 {
 }
 
 /* Show the checkmark when checked */
-.checkboxone input:checked ~ .checkmark:after {
+.checkboxone input:checked~.checkmark:after {
   display: block;
 }
 
@@ -350,27 +358,44 @@ h6 {
   .list p {
     display: none;
   }
+
   #title {
     display: none;
   }
+
   .today-trend-tittle {
     flex-direction: column;
     gap: 30px;
   }
+
   .tickets-tasks {
     flex-direction: column;
   }
+
 }
+
 @media (min-width: 1900px) {
   .list p {
     font-size: 1.25rem;
   }
+
   h1 {
     font-size: 1.5rem;
   }
 }
+
 .number-list {
   height: 100%;
+}
+
+@media (max-width: 500px) {
+  .nav-icon img {
+    display: none;
+  }
+
+  #name {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
