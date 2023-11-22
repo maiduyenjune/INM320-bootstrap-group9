@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;400;700&family=Poppins:wght@300&display=swap');
+
+// Variables
+$gray-color: #A4A6B3;
+$white-color: #FFF;
+$main-font: Muli;
+
+// Mixins 1
+@mixin space {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    @include space;
+    box-sizing: border-box;
+}
+
+ul,
+p {
+    @include space;
+    list-style-type: none;
+}
+
+#sidebar-section {
+    background: #363740;
+}
+
+#logo {
+    padding-left: 1.6rem;
+    padding-top: 2.5625rem;
+    padding-bottom: 3.9375rem;
+}
+
+#logoimg {
+    width: 2rem;
+    height: 2rem;
+}
+
+#title {
+    font-family: $main-font;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    opacity: 70%;
+    color: $gray-color;
+}
+
+.list {
+    padding: 1.125rem;
+    font-family: $main-font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $gray-color;
+}
+
+#sidebaricon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.col-10 {
+    background: #F7F8FC;
+}
+
+#name {
+    font-family: $main-font;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: right;
+    color: #252733;
+}
+
+#overview {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+// Nesting 1
+.static-box {
+    background-color: $white-color;
+    gap: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    p:first-child {
+        font-family: $main-font;
+        font-size: 1.1875rem;
+        line-height: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #9FA2B4;
+        background-color: $white-color;
+    }
+
+    p:nth-child(2) {
+        font-family: $main-font;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #252733;
+        font-weight: bold;
+    }
+}
+
+.nav-icon img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.avatar {
+    border-left: solid 1px #DFE0EB;
+}
+
+#avatarimg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.tittle1 {
+    font-family: $main-font;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: left;
+    color: #9FA2B4;
+}
+
+/* DATA GRAPH*/
+// Nesting 2
+main {
+    background: var(--grayscale-white, $white-color);
+
+    img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .gray-line,
+    .blue-line {
+        height: 2px;
+        width: 1rem;
+
+    }
+
+    .gray-line {
+        background-color: $gray-color;
+    }
+
+    .blue-line {
+        background-color: #3751FF;
+    }
+}
+
+/* aside */
+aside {
+    background: var(--grayscale-white, $white-color);
+    justify-content: space-between;
+}
+
+// Nesting 3
+.number {
+    p {
+        color: var(--grayscale-gray, #9FA2B4);
+        text-align: center;
+        font-family: $main-font;
+        font-size: 1rem;
+        line-height: 22px;
+        /* 137.5% */
+        letter-spacing: 0.3px;
+    }
+
+    #number {
+        color: var(--grayscale-black, #252733);
+        text-align: center;
+        /* Bold 24 (0.3 px) */
+        font-family: $main-font;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+}
+
+/* section */
+.tickets-tasks section {
+    border-radius: 8px;
+    border: 1px solid var(--grayscale-divider, #DFE0EB);
+    background: $white-color;
+}
+
+h1 {
+    color: var(--grayscale-black, #252733);
+    /* Bold 19 (0.4 px) */
+    font-family: $main-font;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+h6 {
+    color: var(--grayscale-gray, #9FA2B4);
+    /* Reg 12 (0.1 px) */
+    font-family: $main-font;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    /* 133.333% */
+    letter-spacing: 0.1px;
+}
+
+.alignleft {
+    color: var(--grayscale-black, #252733);
+    /* Semibold 14 (0.2 px) */
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+.alignright {
+    color: var(--grayscale-gray, #9FA2B4);
+    text-align: right;
+    /* Semibold 14 (0.2 px) */
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.alignrightblue {
+    color: var(--accent-default, #3751FF);
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+// Mixins 2
+@mixin align-text {
+    text-align: center;
+    font-family: $main-font;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.alignrighturgent {
+    width: 74px;
+    height: 24px;
+    border-radius: 8px;
+    background: var(--yellow-default, #FEC400);
+    color: var(--grayscale-white, $white-color);
+    @include align-text;
+}
+
+.alignrightnew {
+    width: 54px;
+    height: 24px;
+    border-radius: 8px;
+    background: var(--green-default, #29CC97);
+    color: var(--grayscale-white, $white-color);
+    line-height: 3px;
+    @include align-text;
+}
+
+.createnewtask {
+    color: var(--grayscale-gray-light, #C5C7CD);
+    /* Semibold 14 (0.2 px) */
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+/* checkbox settings */
+.checkboxone {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--grayscale-black, #252733);
+    /* Semibold 14 (0.2 px) */
+    font-family: $main-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxone input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 3px #C5C7CD;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxone:hover input~.checkmark {
+    background-color: #C5C7CD;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxone input:checked~.checkmark {
+    background-color: #3751FF;
+    border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxone input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxone .checkmark:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid $white-color;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.overview-text {
+    color: $white-color;
+    background-color: #a9abb939;
+    border-left: solid 3px #DDE2FF;
+}
+
+.static-box {
+    cursor: pointer;
+
+}
+
+.static-box:hover p {
+    color: #3751FF;
+}
+
+@media (max-width:1020px) {
+    .list p {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    .today-trend-tittle {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tickets-tasks {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width:1900px) {
+    .list p {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.number-list {
+    height: 100%;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS EXTERNAL -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </link>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container-fluid g-0 d-flex">
+        <section class="col-2 " id="sidebar-section">
+            <div class="d-flex gap-3 column-gap-3 align-items-center " id="logo">
+                <img id="logoimg" src="assets/img/logo.png" />
+                <p id="title">Dashboard Kit</p>
+            </div>
+            <ul>
+                <li class="list overview-text d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/1. overview.png" />
+                    <p>Overview</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/2. tickets.png" />
+                    <p>Tickets</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/3. ideas.png" />
+                    <p>Ideas</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/4. contacts.png" />
+                    <p>Contacts</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/5. agents.png" />
+                    <p>Agents</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3 pb-5">
+                    <img id="sidebaricon" src="assets/img/6. articles.png" />
+                    <p>Articles</p>
+                </li>
+            </ul>
+            <ul class="border-top">
+                <li class="list d-flex align-items-center ps-4 gap-3 pt-5">
+                    <img id="sidebaricon" src="assets/img/a_1. settings.png" />
+                    <p>Settings</p>
+                </li>
+                <li class="list d-flex align-items-center ps-4 gap-3">
+                    <img id="sidebaricon" src="assets/img/Vector.png" />
+                    <p>Sunscription</p>
+                </li>
+            </ul>
+        </section>
+        <div class="col-10 p-5">
+            <div id="header1" class="d-flex align-items-center ">
+                <div id="overview" class=" flex-grow-1">Overview</div>
+                <div class="nav-icon d-flex gap-3 pe-3">
+                    <img src="assets/img/search.png" />
+                    <img src="assets/img/new.png" />
+                </div>
+                <div class=" avatar d-flex gap-3 ps-3 align-items-center">
+                    <p id="name">Jones Ferdinand</p>
+                    <img id="avatarimg" src="assets/img/photo.png" alt="avatar">
+                </div>
+            </div>
+
+            <!-- Static box -->
+            <div class="container-fluid pt-5 g-0 d-flex flex-column gap-5">
+                <div class="row m-0 gap-5">
+                    <div class="static-box col d-flex flex-column align-items-center
+                        justify-content-center border rounded py-4 ">
+                        <p>Unresovled</p>
+                        <p>60</p>
+                    </div>
+                    <div class="static-box col d-flex flex-column align-items-center
+                        justify-content-center border rounded py-4 ">
+                        <p>Overdue</p>
+                        <p>16</p>
+                    </div>
+                    <div class="static-box col d-flex flex-column align-items-center
+                        justify-content-center border rounded py-4 ">
+                        <p>Open</p>
+                        <p>43</p>
+                    </div>
+                    <div class="static-box col d-flex flex-column align-items-center
+                        justify-content-center border rounded  py-4 ">
+                        <p>On hold</p>
+                        <p>64</p>
+                    </div>
+                </div>
+                <!-- Main part -->
+                <div class="today-trend row m-0 d-flex  border rounded ">
+                    <main class=" col-md-8 p-4 d-flex flex-column gap-4 rounded">
+                        <div class="today-trend-tittle d-flex justify-content-between">
+                            <div class="d-flex flex-column tittle1">
+                                <h1> Today's trend</h1>
+                                <p>as of 25 May 2019, 09:41 PM</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="blue-line"></div>
+                                    <span>Today</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="gray-line"></div>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="justify-content-center" src="/assets/img/full graph.png" alt="today's
+                        trends">
+                    </main>
+                    <!-- Number -->
+                    <aside class=" col-md-4 p-0 border-start">
+                        <ul class="d-flex flex-column number-list">
+                            <li
+                                class="number flex-grow-1 border-bottom d-flex justify-content-center flex-column gap-2 p-3 ">
+                                <p>Resolved</p>
+                                <p id="number">449</p>
+                            </li>
+                            <li
+                                class="number flex-grow-1 border-bottom d-flex justify-content-center flex-column gap-2 p-3">
+                                <p>Received</p>
+                                <p id="number">426</p>
+                            </li>
+                            <li
+                                class="number flex-grow-1 border-bottom d-flex justify-content-center flex-column gap-2 p-3">
+                                <p>Average first
+                                    response time</p>
+                                <p id="number">33m</p>
+                            </li>
+                            <li
+                                class="number flex-grow-1 border-bottom d-flex justify-content-center flex-column gap-2 p-3 ">
+                                <p>Average
+                                    response time</p>
+                                <p id="number">3h 8m</p>
+                            </li>
+                            <li class="number flex-grow-1 d-flex justify-content-center flex-column gap-2 p-3 ">
+                                <p>Resolution
+                                    within SLA</p>
+                                <p id="number">94%</p>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- UNRESOLVED TICKETS -->
+                <div class="tickets-tasks row d-flex m-0 gap-3 ">
+                    <section class="col p-0">
+                        <header class="d-flex justify-content-between p-4">
+                            <div class="d-flex flex-column">
+                                <h1>Unresolved tickets</h1>
+                                <h6>Group <b>Support</b></h6>
+                            </div>
+                            <p class="alignrightblue mt-2">View details</p>
+                        </header>
+                        <ul>
+                            <li class="d-flex justify-content-between px-4 py-3 border-bottom">
+                                <p class="alignleft">Waiting on Feature Request</p>
+                                <p class="alignright">4238</p>
+                            </li>
+                            <li class="d-flex justify-content-between px-4 py-3 border-bottom">
+                                <p class="alignleft">Awaiting Customer Response</p>
+                                <p class="alignright">1005</p>
+                            </li>
+                            <li class="d-flex justify-content-between px-4 py-3 border-bottom">
+                                <p class="alignleft">Awaiting Developer Fix</p>
+                                <p class="alignright">914</p>
+                            </li>
+                            <li class="d-flex justify-content-between px-4 py-3 ">
+                                <p class="alignleft">Pending</p>
+                                <p class="alignright">281</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- TASK  -->
+                    <section class="col p-0">
+                        <header class="d-flex justify-content-between p-4">
+                            <div class="d-flex flex-column">
+                                <h1>Task</h1>
+                                <h6>Today</h6>
+                            </div>
+                            <p class="alignrightblue mt-2">View all</p>
+                        </header>
+                        <form>
+                            <ul>
+                                <li class="px-4 py-3 border-bottom d-flex justify-content-between">
+                                    <p class="createnewtask">Create new task</p>
+                                    <svg class="plusicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24
+                                    24" fill="none">
+                                        <rect width="24" height="24" rx="8" fill="#F0F1F7" />
+                                        <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </li>
+
+                                <li class="px-4 py-3 border-bottom d-flex justify-content-between">
+                                    <label class="checkboxone">Finish ticket update
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <span class="alignrighturgent d-flex justify-content-center align-items-center p-2">
+                                        URGENT
+                                    </span>
+                                </li>
+                                <li class="px-4 py-3 border-bottom  d-flex justify-content-between"><label
+                                        class="checkboxone">Create
+                                        new
+                                        ticket example
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <span
+                                        class="alignrightnew  d-flex justify-content-center align-items-center p-2">NEW
+                                    </span>
+                                </li>
+
+                                <li class="px-4 py-3 d-flex justify-content-between"><label class="checkboxone">Update
+                                        ticket
+                                        report
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="alignright">DEFAULT</p>
+                                </li>
+
+                            </ul>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
